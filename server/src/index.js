@@ -22,5 +22,7 @@ app.use("/api/quizzes", quizRoutes);
 app.use("/api/quiz-attempts", attempQuizRoutes);
 
 app.listen(process.env.PORT || 8000, () => {
-  console.log(`Server Started at http://localhost:${process.env.PORT || 8000}`);
+  console.log(
+    `Server running on :  http://localhost:${process.env.PORT || 8000}`
+  );
 });
